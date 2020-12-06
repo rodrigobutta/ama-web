@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [               
+        {
+            "name": "Docker: Web Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/src",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "/app/src/*": "${webRoot}/*",
+                "webpack:///./src/*": "${webRoot}/*"
+            },
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",          
+        }
+    ]
+}
