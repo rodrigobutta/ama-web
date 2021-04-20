@@ -10,6 +10,9 @@ React
 ### Run
 In `ama-env` do `fig up web`
 
+### Test Run
+http://localhost:3000/
+
 ### Debug VSCODE
 (when up running): Start debug from VSCODE: `Docker: Web  Chrome`
 
